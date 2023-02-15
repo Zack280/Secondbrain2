@@ -1,0 +1,135 @@
+#dropZone {
+    width: 1500px;
+    height: 920px;
+    padding: 10px;
+    border: 5px solid rgb(56, 72, 102);
+    margin-bottom: 0px;
+    
+}
+
+#PDF {
+    border: 500%;
+    border-color: rgb(255, 0, 0);
+    position: absolute;
+    top: 50px;
+    left: 60px;
+    box-shadow: 0px 0px 10px;
+}
+
+
+#NotesTab {
+    position: absolute;
+    left: 1540px;
+    top: 0px;
+    width: 330px;
+    border: 5px solid rgb(56, 72, 102);
+    margin-top: 8px;
+    margin-left:5px;
+    height: 940px;
+    text-align: center;
+    
+
+}
+
+.Notes{
+    color: rgb(107, 135, 170);
+    font-size: 50px;
+
+}
+
+.newnote{
+    padding: 4px;
+    margin-bottom: 5px;
+    background-color:rgb(61, 84, 112) ;
+    border-radius: 5px;
+
+}
+
+.collumn{
+    background-color: rgb(79, 110, 148);
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+    height: 765px;
+}
+
+.adddoc{
+    background-color: lightgrey;
+    border-radius: 50px;
+    size: 50px;
+    border: 5px;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    bottom: 20px;
+    background-color: rgb(101, 132, 170);
+    font-size: 30px;
+}
+
+
+.adddoc2{
+    background-color: lightgrey;
+    border-radius: 50px;
+    size: 50px;
+    border: 5px;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: rgb(101, 132, 170);
+    font-size: 25px;
+}
+
+.adddoc3{
+    background-color: lightgrey;
+    border-radius: 50px;
+    size: 50px;
+    border: 5px;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: rgb(101, 132, 170);
+    font-size: 25px;
+}
+
+.adddoc4{
+    background-color: lightgrey;
+    border-radius: 10px;
+    border: 5px;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 15px;
+    background-color: rgb(101, 132, 170);
+    font-size: 5px;
+}
+
+.notetxt{
+    color:rgb(33, 50, 71) ;
+}
+
+body {
+    background-color: rgb(67, 94, 126);
+}
+
+h1 {
+    color: rgb(107, 135, 170);
+    text-align: center;
+    margin-top: 350px;
+    font-size: 200px;
+    opacity:10%;
+}
+
+.div-shadow{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    width: 160px;
+    height: 200px;
+    box-shadow: 0px 0px 10px;
+    margin: 10px;
+}
+

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="main.css">
+        <script src="main.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.15.0/Sortable.min.js" integrity="sha512-Eezs+g9Lq4TCCq0wae01s9PuNWzHYoCMkE97e2qdkYthpI0pzC3UGB03lgEHn2XM85hDOUF6qgqqszs+iXU4UA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    </head>
+    <body onload="move('doc')">
+        <div id="dropZone">
+
+            <div class="BrandText">
+             <h1><p>SecondBrain</p></h1>
+            </div>
+            
+            <iframe src="dummy.pdf" title="Dummy" width="160px" height="200px" draggable="true" id="PDF" class="PDF">
+                <p><a href="dummy.pdf"></a></p>
+                
+            </iframe>
+
+            <button class="adddoc">
+                <p style="color: white;">+</p>
+            </button>
+
+            
+            
+        </div>
+
+        <div class="NotesTab" id="NotesTab">
+            <p class="Notes">Notes</p>
+
+            <div class="collumn">
+                <div class="newnote" id="newnote">
+                    <span class="notetxt">Note 1</span>
+                    <i class="bar"></i>
+
+                    <button class="adddoc4" id="hide" onclick="hide()">
+                        <p style="color: white;">-</p>
+                    </button>
+
+                </div>
+
+                <div class="newnote" id="newnote2">
+                    <span class="notetxt">Note 2</span>
+                    <i class="bar"></i>
+
+                    <button class="adddoc4" id="hide" onclick="hide2()">
+                        <p style="color: white;">-</p>
+                    </button>
+
+                </div>
+
+                <div class="newnote" id="newnote3">
+                    <span class="notetxt">Note 3</span>
+                    <i class="bar"></i>
+
+                    <button class="adddoc4" id="hide" onclick="hide3()">
+                        <p style="color: white;">-</p>
+                    </button>
+
+                </div>
+
+                <div class="newnote" id="newnote4">
+                    <span class="notetxt">Note 4</span>
+                    <i class="bar"></i>
+
+                    <button class="adddoc4" id="hide" onclick="hide4()">
+                        <p style="color: white;">-</p>
+                    </button>
+
+                </div>
+
+                <div class="newnote" id="newnote5">
+                    <span class="notetxt">Note 5</span>
+                    <i class="bar"></i>
+
+                    <button class="adddoc4" id="hide" onclick="hide5()">
+                        <p style="color: white;">-</p>
+                    </button>
+
+                </div>
+
+                <div class="newnote" id="newnote6">
+                    <span class="notetxt">Note 6</span>
+                    <i class="bar"></i>
+
+                    <button class="adddoc4" id="hide" onclick="hide6()">
+                        <p style="color: white;">-</p>
+                    </button>
+
+                </div>
+
+                <div class="newnote" id="newnote7">
+                    <span class="notetxt">Note 7</span>
+                    <i class="bar"></i>
+
+                    <button class="adddoc4" id="hide" onclick="hide7()">
+                        <p style="color: white;">-</p>
+                    </button>
+
+                </div>
+
+                <div class="newnote" id="newnote8">
+                    <span class="notetxt">Note 8</span>
+                    <i class="bar"></i>
+
+                    <button class="adddoc4" id="hide" onclick="hide8()">
+                        <p style="color: white;">-</p>
+                    </button>
+
+                </div>
+
+                <div class="newnote" id="newnote9">
+                    <span class="notetxt">Note 9</span>
+                    <i class="bar"></i>
+
+                    <button class="adddoc4" id="hide" onclick="hide9()">
+                        <p style="color: white;">-</p>
+                    </button>
+
+                </div>
+
+                <div class="newnote" id="newnote10">
+                    <span class="notetxt">Note 10</span>
+                    <i class="bar"></i>
+
+                    <button class="adddoc4" id="hide" onclick="hide10()">
+                        <p style="color: white;">-</p>
+                    </button>
+
+                </div>
+
+            </div>
+
+            <button class="adddoc2" id="show" onclick="show()">
+                <p style="color: white;">+</p>
+            </button>
+
+
+        </div>
+
+
+        
+
+
+
+
+
+
+
+       <script>
+        var dragValue;
+
+        function move(id){
+            var element = document.getElementById("PDF");
+            element.style.position = "absolute";
+            element.onmousedown = function(){
+                dragValue = element;
+            }
+        }
+
+
+        document.onmouseup = function(e){
+            dragValue = null;
+        }
+
+        document.onmousemove = function(e){
+            var x = e.pageX;
+            var y = e.pageY;
+
+            dragValue.style.left = x + "px";
+            dragValue.style.top = y + "px";
+        }
+
+       const dragArea = document.querySelector(".collumn")
+        new Sortable(dragArea, {
+            animation: 350
+        }); 
+
+    </script>
+        
+
+
+    </body>
+    
+</html>
+    
